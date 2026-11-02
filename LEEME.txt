@@ -1,0 +1,24 @@
+NAYELI — COCINA DE AUTOR
+
+ARCHIVOS
+- index.html: estructura y contenido de la página.
+- estilos.css: diseño visual y adaptación a móviles.
+- script.js: menú móvil, filtros de carta y formulario de reservas.
+
+CÓMO ABRIR
+1. Descarga y descomprime la carpeta.
+2. Abre la carpeta en Visual Studio Code.
+3. Abre index.html en tu navegador. También puedes usar la extensión Live Server.
+
+PERSONALIZAR WHATSAPP
+1. Abre script.js.
+2. Busca: const WHATSAPP_NUMBER = "";
+3. Entre las comillas escribe el número real con código de país, sin + ni espacios.
+   Ejemplo de formato para Perú: "51987654321".
+4. Guarda el archivo y vuelve a cargar la página.
+
+IMPORTANTE
+- Los platos, descripciones y precios de la carta son ejemplos editables, no precios confirmados.
+- Las fotografías se cargan desde Unsplash; para verlas se necesita conexión a internet.
+- No se han inventado dirección, horarios ni número de contacto del restaurante.
+- El formulario prepara un mensaje de reserva. La reserva solo queda confirmada cuando el restaurante responde.

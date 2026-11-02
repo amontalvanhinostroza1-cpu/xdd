@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171512">
+  <meta name="description" content="Nayeli — cocina de autor. Una experiencia gastronómica donde cada detalle cuenta.">
+  <title>Nayeli — Cocina de autor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement-bar">
+    <span class="announcement-dot"></span>
+    <p>Una experiencia para recordar · Cocina de autor</p>
+    <a href="#reservas">Reserva tu mesa <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Nayeli, ir al inicio">
+      <span class="brand-mark">N</span>
+      <span class="brand-copy"><strong>NAYELI</strong><small>COCINA DE AUTOR</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#concepto">Nuestra esencia</a>
+      <a href="#carta">La carta</a>
+      <a href="#experiencia">La experiencia</a>
+      <a href="#galeria">Galería</a>
+    </nav>
+    <a class="header-cta" href="#reservas">Reservar una mesa <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Ambiente cálido y elegante de un restaurante de alta cocina"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content page-shell">
+        <p class="eyebrow light-eyebrow"><span></span> SABORES QUE CUENTAN HISTORIAS</p>
+        <h1 id="hero-title">El arte de<br><em>saborear</em> la vida.</h1>
+        <p class="hero-description">Una cocina sensible, ingredientes extraordinarios y momentos que merecen quedarse contigo.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#carta">Descubrir la carta <span aria-hidden="true">→</span></a>
+          <a class="text-link light-link" href="#concepto">Conoce Nayeli <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-caption"><span>01 / 04</span><span>DETALLE · SABOR · EMOCIÓN</span></div>
+      <a class="scroll-cue" href="#concepto" aria-label="Desplazarse a nuestra esencia"><span></span> DESLIZA PARA EXPLORAR</a>
+    </section>
+
+    <section class="intro-section section-pad" id="concepto">
+      <div class="page-shell intro-grid">
+        <div class="intro-aside">
+          <span class="section-index">01 — NUESTRA ESENCIA</span>
+          <span class="vertical-note">HECHO CON INTENCIÓN</span>
+        </div>
+        <div class="intro-copy">
+          <p class="eyebrow">BIENVENIDOS A NAYELI</p>
+          <h2>La excelencia está<br>en <em>cada detalle.</em></h2>
+          <p class="intro-lead">Creemos que una gran comida va mucho más allá del plato. Es el aroma que despierta recuerdos, la conversación que se alarga y la emoción de descubrir algo nuevo.</p>
+          <div class="intro-bottom">
+            <p>En Nayeli imaginamos una experiencia donde la creatividad honra al producto, la técnica respeta su origen y la hospitalidad hace que cada persona se sienta especial.</p>
+            <span class="signature">Nayeli <i>✳</i></span>
+          </div>
+        </div>
+        <div class="intro-photo-wrap">
+          <img class="intro-photo" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85" alt="Plato de alta cocina servido con una presentación cuidada" loading="lazy">
+          <div class="photo-stamp"><span>UNA MESA</span><strong>UNA<br>HISTORIA</strong><span>NA · YELI</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="carta">
+      <div class="page-shell">
+        <div class="section-heading centered-heading">
+          <span class="section-index">02 — NUESTRA CARTA</span>
+          <p class="eyebrow">CREADO PARA DISFRUTAR</p>
+          <h2>Pequeñas obras<br>de <em>gran sabor.</em></h2>
+          <p class="section-description">Una selección de platos de inspiración contemporánea. Cada receta está pensada para sorprenderte desde el primer aroma.</p>
+        </div>
+
+        <div class="menu-toolbar" aria-label="Filtrar platos por categoría">
+          <div class="menu-filters" role="group" aria-label="Categorías de la carta">
+            <button class="filter-button active" type="button" data-filter="todos" aria-pressed="true">Toda la carta</button>
+            <button class="filter-button" type="button" data-filter="entradas" aria-pressed="false">Entradas</button>
+            <button class="filter-button" type="button" data-filter="fondos" aria-pressed="false">Fondos</button>
+            <button class="filter-button" type="button" data-filter="postres" aria-pressed="false">Postres</button>
+          </div>
+          <span class="menu-note">MENÚ DE MUESTRA · PRECIOS EDITABLES</span>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-category="entradas">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Entrada fresca de la casa" loading="lazy">
+              <span class="dish-number">01</span>
+            </div>
+            <div class="dish-info"><div><span class="dish-category">ENTRADA</span><h3>Tiradito del chef</h3></div><span class="dish-price">S/ 42</span></div>
+            <p class="dish-description">Pesca del día, leche cítrica, ají suave y notas frescas de temporada.</p>
+          </article>
+
+          <article class="menu-card" data-category="fondos">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85" alt="Carne asada con acompañamientos" loading="lazy">
+              <span class="dish-number">02</span>
+            </div>
+            <div class="dish-info"><div><span class="dish-category">FONDO</span><h3>Lomo a la brasa</h3></div><span class="dish-price">S/ 68</span></div>
+            <p class="dish-description">Corte seleccionado, jugo reducido, vegetales de estación y hierbas aromáticas.</p>
+          </article>
+
+          <article class="menu-card" data-category="fondos">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=900&q=85" alt="Risotto servido en un plato" loading="lazy">
+              <span class="dish-number">03</span>
+            </div>
+            <div class="dish-info"><div><span class="dish-category">FONDO</span><h3>Risotto de temporada</h3></div><span class="dish-price">S/ 56</span></div>
+            <p class="dish-description">Arroz cremoso, hongos, queso madurado y un delicado toque de hierbas.</p>
+          </article>
+
+          <article class="menu-card" data-category="entradas">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="Ensalada fresca con vegetales de colores" loading="lazy">
+              <span class="dish-number">04</span>
+            </div>
+            <div class="dish-info"><div><span class="dish-category">ENTRADA</span><h3>Huerto de estación</h3></div><span class="dish-price">S/ 35</span></div>
+            <p class="dish-description">Vegetales frescos, texturas crocantes, vinagreta de la casa y semillas tostadas.</p>
+          </article>
+
+          <article class="menu-card" data-category="fondos">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=85" alt="Plato contemporáneo de restaurante" loading="lazy">
+              <span class="dish-number">05</span>
+            </div>
+            <div class="dish-info"><div><span class="dish-category">FONDO</span><h3>Pesca en mantequilla</h3></div><span class="dish-price">S/ 64</span></div>
+            <p class="dish-description">Pesca del día, mantequilla cítrica, puré sedoso y vegetales baby.</p>
+          </article>
+
+          <article class="menu-card" data-category="postres">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="Postre delicado servido en un plato" loading="lazy">
+              <span class="dish-number">06</span>
+            </div>
+            <div class="dish-info"><div><span class="dish-category">POSTRE</span><h3>Final de chocolate</h3></div><span class="dish-price">S/ 28</span></div>
+            <p class="dish-description">Chocolate intenso, crema ligera, fruta de estación y crocante de cacao.</p>
+          </article>
+        </div>
+        <p class="menu-footnote">* Carta, ingredientes y precios referenciales. Actualiza esta sección con la oferta real del restaurante.</p>
+      </div>
+    </section>
+
+    <section class="quote-band" id="experiencia">
+      <div class="quote-image"></div>
+      <div class="quote-overlay"></div>
+      <div class="quote-content page-shell">
+        <span class="section-index light-index">03 — LA EXPERIENCIA</span>
+        <span class="quote-mark">“</span>
+        <blockquote>No vienes solo<br>a comer. Vienes a<br><em>sentir algo.</em></blockquote>
+        <p>EL PLACER DE COMPARTIR, SIN PRISA.</p>
+      </div>
+    </section>
+
+    <section class="details-section section-pad">
+      <div class="page-shell details-grid">
+        <div class="detail-item"><span class="detail-icon">✳</span><span class="detail-kicker">PRODUCTO</span><h3>Respeto por<br>el origen.</h3><p>Elegimos ingredientes por su calidad, frescura y personalidad.</p></div>
+        <div class="detail-item"><span class="detail-icon">⌁</span><span class="detail-kicker">CREATIVIDAD</span><h3>Tradición con<br>mirada nueva.</h3><p>Exploramos sabores y texturas para crear platos con identidad.</p></div>
+        <div class="detail-item"><span class="detail-icon">♡</span><span class="detail-kicker">HOSPITALIDAD</span><h3>El gusto de<br>recibirte.</h3><p>Cuidamos los detalles para que disfrutes cada instante.</p></div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" id="galeria">
+      <div class="page-shell">
+        <div class="gallery-heading">
+          <div><span class="section-index">04 — MOMENTOS NAYELI</span><p class="eyebrow">EL AMBIENTE TAMBIÉN SE SABOREA</p><h2>Una invitación<br>a <em>quedarte.</em></h2></div>
+          <p>Luces cálidas, una mesa preparada con cariño y el espacio perfecto para celebrar lo cotidiano y lo extraordinario.</p>
+        </div>
+        <div class="gallery-grid">
+          <img class="gallery-tall" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85" alt="Interior acogedor de un restaurante" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85" alt="Presentación de un plato de alta cocina" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=900&q=85" alt="Mesa preparada para una experiencia gastronómica" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-section section-pad" id="reservas">
+      <div class="page-shell reservation-grid">
+        <div class="reservation-copy">
+          <span class="section-index light-index">05 — TU MESA TE ESPERA</span>
+          <p class="eyebrow light-eyebrow">HAGAMOS UN MOMENTO ESPECIAL</p>
+          <h2>La próxima<br>historia puede<br>ser <em>la tuya.</em></h2>
+          <p>Cuéntanos cuándo te gustaría visitarnos. Completa tus datos y prepara tu solicitud de reserva.</p>
+          <div class="reservation-note"><span>✳</span><span>Para ocasiones especiales, cumpleaños o una cena inolvidable, déjanos tu mensaje.</span></div>
+        </div>
+
+        <form class="reservation-form" id="reservationForm">
+          <div class="form-heading"><span>RESERVACIONES</span><span>NA / 01</span></div>
+          <label for="guestName">Nombre completo</label>
+          <input id="guestName" name="nombre" type="text" placeholder="¿A nombre de quién reservamos?" autocomplete="name" required>
+          <div class="form-row">
+            <div><label for="guestDate">Fecha</label><input id="guestDate" name="fecha" type="date" required></div>
+            <div><label for="guestTime">Hora</label><select id="guestTime" name="hora" required><option value="">Seleccionar</option><option>12:00</option><option>13:00</option><option>14:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select></div>
+          </div>
+          <div class="form-row">
+            <div><label for="guestCount">Personas</label><select id="guestCount" name="personas" required><option value="">Cantidad</option><option>1 persona</option><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5 personas</option><option>6 personas</option><option>7 o más personas</option></select></div>
+            <div><label for="guestPhone">Teléfono</label><input id="guestPhone" name="telefono" type="tel" placeholder="Tu número" autocomplete="tel" required></div>
+          </div>
+          <label for="guestMessage">¿Algún detalle que debamos conocer? <span>(opcional)</span></label>
+          <textarea id="guestMessage" name="mensaje" rows="3" placeholder="Celebración, preferencias, solicitudes..."></textarea>
+          <button class="button button-gold submit-button" type="submit">Preparar mi reserva <span aria-hidden="true">→</span></button>
+          <p class="form-privacy">Tu solicitud quedará lista para enviarse por WhatsApp cuando se configure el número del restaurante.</p>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-main">
+      <a class="brand footer-brand" href="#inicio" aria-label="Nayeli, ir al inicio"><span class="brand-mark">N</span><span class="brand-copy"><strong>NAYELI</strong><small>COCINA DE AUTOR</small></span></a>
+      <p>Una experiencia para<br><em>todos los sentidos.</em></p>
+      <div class="footer-links"><a href="#concepto">Esencia</a><a href="#carta">Carta</a><a href="#reservas">Reservas</a><a href="#galeria">Galería</a></div>
+    </div>
+    <div class="page-shell footer-bottom"><span>© <span id="currentYear"></span> NAYELI. TODOS LOS DERECHOS RESERVADOS.</span><span>HECHO CON <b>✳</b> Y MUCHO SABOR</span></div>
+  </footer>
+
+  <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">↑</a>
+</body>
+</html>
